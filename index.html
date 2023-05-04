@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>LoL Champs</title>
+</head>
+<body>
+    <a name='Kotwica-Demacia'><div id="main"></a>
+        <div id="banner">
+            <div id="logo"><img src="lol.png"></div>
+            <div id="demacia" onclick="scrollToSection('banner', 0)"><a href='#Kotwica-Demacia' style="margin-top: 20px"><img src="demacia.png"></div></a>
+            <div id="noxus" onclick="scrollToSection('DravenIcon', 900)"><img src="noxus.png"></div></a>
+            <div id="frelj" onclick="scrollToSection('SejuaniIcon', 1830)"><img src="freljord.png"></a></div>
+            <div id="void" onclick="scrollToSection('MalzaharIcon', 2750)"> <img src="void.png"></div>
+            <div id="tryb" onclick="TrybChange()"><h1>Tryb jasny</h1></div>
+        </div>
+        <div id="center">
+            <div id="div-dem">
+                <h1 id="a1">Demacia</h1>
+                <div id="sylas">
+                    <img src="sylas.jpg" class="champ" id="sylass">
+                    <div id="box"><img id="myImage" src="grey-icon.jpg"  onclick="SylasChange()"></div>
+                </div>
+                <div id="vayne">
+                    <img src="vayne.jpg" class="champ" id="VayneImage">
+                    <div id="box"><img id="VayneIcon" src="grey-icon.jpg" onclick="VayneChange()"></div>
+                </div>
+                <div id="garen">
+                    <img src="garen.jpg" class="champ" id="GarenImage">
+                    <a name="Kotwica-Noxus"><div id="box"><img src="grey-icon.jpg" id="GarenIcon" onclick="GarenChange()"></div></a>
+                </div>
+            </div>
+            <div id="kotwicaNoxus">
+                
+            </div>
+            <div id="div-nox">
+                <h1 id="b1">Noxus</h1>
+                <div id="draven">
+                    <img src="draven.jpg" class="champ" id="DravenImage">
+                    <div id="box"><img src="grey-icon.jpg" id="DravenIcon" onclick="DravenChange()"></div>
+                </div>
+                <div id="darius">
+                    <img src="darius.jpg" class="champ" id="DariusImage">
+                    <div id="box"><img src="grey-icon.jpg" id="DariusIcon" onclick="DariusChange()"></div>
+                </div>
+                <div id="samira">
+                    <img src="samira.jpg" class="champ" id="SamiraImage">
+                    <a name="Kotwica-Freljord"><div id="box"><img src="grey-icon.jpg" id="SamiraIcon" onclick="SamiraChange()"></div></a>
+                </div>
+            </div>
+            
+            <div id="div-frelj">
+            
+                <h1 id="c1">Freljord</h1>
+                <div id="sejuani">
+                    <img src="sejuani.jpg" class="champ" id="SejuaniImage">
+                    <div id="box"><img src="grey-icon.jpg" id="SejuaniIcon" onclick="SejuaniChange()" name="sejuani"></div>
+                </div>
+                <div id="ashe">
+                    <img src="ashe.jpg" class="champ" id="AsheImage">
+                    <div id="box"><img src="grey-icon.jpg" id="AsheIcon" onclick="AsheChange()" name="sejuani"></div>
+                </div>
+                <div id="nunu">
+                    <img src="nunu.jpg" class="champ" id="NunuImage">
+                    <a name='Kotwica-Void'><div id="box"><img src="grey-icon.jpg" id="NunuIcon" onclick="NunuChange()"></div></a>
+                </div>
+            </div>
+            <div id="div-void">
+                <h1 id="d1">Void</h1>
+                <div id="malzahar">
+                    <img src="malzahar.jpg" class="champ" id="MalzaharImage">
+                    <div id="box"><img src="grey-icon.jpg" id="MalzaharIcon" onclick="MalzaharChange()"></div>
+                </div>
+                <div id="kassadin">
+                    <img src="kassadin.jpg" class="champ" id="KassadinImage">
+                    <div id="box"><img src="grey-icon.jpg" id="KassadinIcon" onclick="KassadinChange()"></div>
+                </div>
+                <div id="kaisa">
+                    <img src="kaisa.jpg" class="champ" id="KaisaImage">
+                    <div id="box"><img src="grey-icon.jpg" id="KaisaIcon" onclick="KaisaChange()"></div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

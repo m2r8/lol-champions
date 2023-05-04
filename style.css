@@ -1,0 +1,210 @@
+*{
+    cursor: url('kursor.ico'), default;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(174, 140, 54);
+    text-shadow: 1px 1px 2px rgb(108, 82, 16), 0 0 1em rgb(139, 139, 139), 0 0 0.2em rgb(156, 156, 156);
+
+    display: flex;
+    flex-direction: column;
+}
+#banner{
+    background-image: linear-gradient(to bottom right, rgb(25, 68, 133), rgb(16, 95, 84));
+    height: 10vh;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: fixed;
+    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+    z-index: 4;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#banner img{
+    height: 7vh;
+}
+#center{
+    margin-top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+}
+#div-dem, #div-nox, #div-frelj, #div-void{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 3vh;
+}
+#box{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    margin-top: -0.5vh;
+}
+#box img{
+    height: 7vh;
+    box-shadow: 0px 0px 20px 0px rgb(183, 183, 183);
+    border-radius: 100%;
+}
+/* ================================DEMACIA=========================================== */
+#div-dem{
+    background-image: url(dbg-demacia.jpg);
+    width: 99vw;
+    height: 90vh;
+}
+#a1{
+    z-index: 3;
+    font-size: 5em;
+    position: absolute; /* ustawiamy h1 jako pozycję bezwzględną */
+    top: 18%; /* ustawiamy pozycję w połowie wysokości kontenera */
+    left: 50%; /* ustawiamy pozycję w połowie szerokości kontenera */
+    transform: translate(-50%, -50%); /* przesuwamy h1 o połowę jego wymiarów w lewo i górę, aby ustawić go dokładnie na środku */
+  }
+/* ================================NOXUS=========================================== */
+#div-nox{
+    background-image: url(dbg-noxus.jpg);
+    width: 99vw;
+    height: 90vh;
+}
+#b1{
+    z-index: 3;
+    font-size: 5em;
+    position: absolute; /* ustawiamy h1 jako pozycję bezwzględną */
+    top: 110.5%; /* ustawiamy pozycję w połowie wysokości kontenera */
+    left: 50%; /* ustawiamy pozycję w połowie szerokości kontenera */
+    transform: translate(-50%, -50%); /* przesuwamy h1 o połowę jego wymiarów w lewo i górę, aby ustawić go dokładnie na środku */
+  }
+/* ================================FRELJORD=========================================== */
+#div-frelj{
+    background-image: url(dbg-freljord.jpg);
+    width: 99vw;
+    height: 90vh;
+}
+#c1{
+    z-index: 3;
+    font-size: 5em;
+    position: absolute; /* ustawiamy h1 jako pozycję bezwzględną */
+    top: 203.5%; /* ustawiamy pozycję w połowie wysokości kontenera */
+    left: 50%; /* ustawiamy pozycję w połowie szerokości kontenera */
+    transform: translate(-50%, -50%); /* przesuwamy h1 o połowę jego wymiarów w lewo i górę, aby ustawić go dokładnie na środku */
+  }
+/* ================================VOID=========================================== */
+#div-void{
+    background-image: url(dbg-void.jpg);
+    width: 99vw;
+    height: 90vh;
+}
+#d1{
+    z-index: 3;
+    font-size: 5em;
+    position: absolute; /* ustawiamy h1 jako pozycję bezwzględną */
+    top: 296.5%; /* ustawiamy pozycję w połowie wysokości kontenera */
+    left: 50%; /* ustawiamy pozycję w połowie szerokości kontenera */
+    transform: translate(-50%, -50%); /* przesuwamy h1 o połowę jego wymiarów w lewo i górę, aby ustawić go dokładnie na środku */
+  }
+
+  /* ================================RAMKI CHAMPIONÓW=========================================== */
+ /* ===DEMACIA=== */
+#sylas .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#sylas #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#vayne .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#vayne #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#garen .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#garen #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+ /* ===NOXUS=== */
+#draven .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#draven #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#darius .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#darius #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#samira .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#samira #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+ /* ===FRELJORD=== */
+#sejuani .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#sejuani #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#ashe .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#ashe #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#nunu .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#nunu #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+ /* ===VOID=== */
+#malzahar .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#malzahar #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#kassadin .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#kassadin #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+#kaisa .champ{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#kaisa #box{
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+#kotwicaNoxusu{
+    margin-top: -3000px;
+}
