@@ -1,4 +1,3 @@
-var img = document.getElementById('image');
 var isSylas = true;
 var isVayne = true;
 var isGaren = true;
@@ -36,26 +35,22 @@ Malzahar();
 Kassadin();
 Kaisa();
 
+// ZMIANA IKONEK
 function SylasChange(){
-
-  if (isSylas) {
+  if(isSylas) {
     document.getElementById("myImage").src = "pink-icon.jpg";
     isSylas = false;
     document.getElementById("sylas").style.boxShadow = '0px 0px 20px 0px rgb(299, 93, 93)';
     localStorage.setItem("sylas", "sylas");
     playPing1();
-    
   } else {
     document.getElementById("myImage").src = "grey-icon.jpg";
     document.getElementById("sylas").style.boxShadow = '0px 0px 20px 0px rgb(0, 0, 0)';
     isSylas = true;
     localStorage.removeItem("sylas");
     playPing2()
-    
   }
 }
-
-
 function VayneChange() {
   if (isVayne) {
     document.getElementById("VayneIcon").src = "pink-icon.jpg";
@@ -222,6 +217,8 @@ function KaisaChange() {
     
   }
 }
+
+// CIASTECZKA POSTACI
 function Sylas() {
   let sylas = localStorage.getItem("sylas"); 
   if(sylas === "sylas") {
@@ -235,16 +232,6 @@ function Sylas() {
 function Garen() {
   let garen = localStorage.getItem("garen"); 
   if(garen === "garen") {
-     document.getElementById("garen").style.boxShadow = '0px 0px 20px 0px rgb(299, 93, 93)';
-     document.getElementById("GarenIcon").src = "pink-icon.jpg";
-     isGaren = false; 
-     playPing1()
-  } else {
-  }
-}
-function Vayne() {
-  let garen = localStorage.getItem("vayne"); 
-  if(garen === "vayne") {
      document.getElementById("garen").style.boxShadow = '0px 0px 20px 0px rgb(299, 93, 93)';
      document.getElementById("GarenIcon").src = "pink-icon.jpg";
      isGaren = false; 
@@ -362,6 +349,8 @@ function Kaisa() {
   } else {
   }
 }
+
+// ZMANA CIEMNY/JASNY
 function TrybChange() {
   if(isCiemny) {
   banner.style.background = "linear-gradient(to bottom right, rgb(234, 201, 232), rgb(211, 178, 132))"; 
@@ -374,8 +363,7 @@ function TrybChange() {
   localStorage.setItem("trybJasny","trybJasny");
   }
   else {
-   banner.style.background = "linear-gradient(to bottom right, rgb(25, 68, 133), rgb(16, 95, 84))"; 
-
+   banner.style.background = "linear-gradient(to bottom right, rgb(25, 68, 133), rgb(16, 95, 84))";
    divdem.style.backgroundImage = "url(dbg-demacia.jpg)";
    divnox.style.backgroundImage = "url(dbg-noxus.jpg)";
    divfrelj.style.backgroundImage = "url(dbg-freljord.jpg)";
@@ -385,6 +373,20 @@ function TrybChange() {
    localStorage.removeItem("trybJasny");
   }
 }
+
+function TrybCiemnoJasny() {
+  let trybJasny = localStorage.getItem("trybJasny","trybJasny");
+  if(trybJasny === "trybJasny"){
+  banner.style.background = "linear-gradient(to bottom right, rgb(234, 201, 232), rgb(211, 178, 132))"; 
+  divdem.style.backgroundImage = "url(bg-demacia.jpg)";
+  divnox.style.backgroundImage = "url(bg-noxus.jpg)";
+  divfrelj.style.backgroundImage = "url(bg-freljord.jpg)";
+  divvoid.style.backgroundImage = "url(bg-void.jpg)";
+  isCiemny = false;
+  }
+}
+
+// AUDIO
 function playPing1() {
   let audio = new Audio("ping1.mp3");
   audio.play();
@@ -401,26 +403,12 @@ function playPing4() {
   let audio = new Audio("ping4.mp3");
   audio.play();
 }
-function Flejord() {
-  let audio = new Audio("flejord.mp3");
-  audio.play();
-}
-function Void() {
-  let audio = new Audio("void.mp3");
-  audio.play();
-}
-function Noxus() {
-  let audio = new Audio("noxus.mp3");
-  audio.play();
-}
-function Demacia() {
-  let audio = new Audio("demacia.mp3");
-  audio.play();
-}
 function Miasta() {
   let audio = new Audio("miasta.mp3");
   audio.play();  
 }
+
+// KOTWICA
 function scrollToSection (id, offset) {
   Miasta();
   var section = document.getElementById(id);
@@ -430,39 +418,3 @@ function scrollToSection (id, offset) {
     behavior: 'smooth'
   });
 }
-function TrybCiemnoJasny() {
-  console.log(localStorage.getItem("trybJasny"));
-  let trybJasny = localStorage.getItem("trybJasny","trybJasny");
-  if(trybJasny === "trybJasny") {
-    banner.style.background = "linear-gradient(to bottom right, rgb(234, 201, 232), rgb(211, 178, 132))"; 
-  divdem.style.backgroundImage = "url(bg-demacia.jpg)";
-  divnox.style.backgroundImage = "url(bg-noxus.jpg)";
-  divfrelj.style.backgroundImage = "url(bg-freljord.jpg)";
-  divvoid.style.backgroundImage = "url(bg-void.jpg)";
-  isCiemny = false;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-   
