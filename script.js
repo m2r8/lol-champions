@@ -361,6 +361,7 @@ function TrybChange() {
   isCiemny = false; 
   playPing3();
   localStorage.setItem("trybJasny","trybJasny");
+  document.getElementById('tryb').getElementsByTagName('h1')[0].innerText = "Tryb ciemny";
   }
   else {
    banner.style.background = "linear-gradient(to bottom right, rgb(25, 68, 133), rgb(16, 95, 84))";
@@ -371,6 +372,7 @@ function TrybChange() {
    isCiemny = true;
    playPing4();
    localStorage.removeItem("trybJasny");
+   document.getElementById('tryb').getElementsByTagName('h1')[0].innerText = "Tryb jasny";
   }
 }
 
